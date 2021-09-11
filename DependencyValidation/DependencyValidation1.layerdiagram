@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a5cf1c23-ced5-4114-89e9-54d2652e372f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="eb38fcda-1ad1-427d-bad5-e4aac6b74285" name="Core.dll">
+      <references>
+        <reference Id="6e7c67b5-56e1-4bc6-a4a6-ff4e34b0d787" name="Core.dll">
+          <ArtifactNode Label="Core.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Core/bin/Debug/netstandard2.1/Core.dll)" />
+          <ExpandedNode Id="(Assembly=Core)" Label="Core.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="ee93703d-2e5a-40cd-9f4d-eb71e74ba2c0" name="Core.Test.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ea53cbee-e111-43fc-b1ed-504eb2d07150" direction="Forward">
+          <layerMoniker Id="eb38fcda-1ad1-427d-bad5-e4aac6b74285" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="af3b514e-28f0-4900-9fe7-fe77bcd11120" name="Core.Test.dll">
+          <ArtifactNode Label="Core.Test.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Core.Test/bin/Debug/netcoreapp3.1/Core.Test.dll)" />
+          <ExpandedNode Id="(Assembly=Core.Test)" Label="Core.Test.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="83b2168b-89b8-452f-8419-7978e446dd92" name="Infrastructure.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="39053079-0331-42f3-933a-dbfee32aef04" direction="Forward">
+          <layerMoniker Id="eb38fcda-1ad1-427d-bad5-e4aac6b74285" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="c41aebd2-f92f-45d5-a4f2-6c251eb04f07" name="Infrastructure.dll">
+          <ArtifactNode Label="Infrastructure.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Infrastructure/bin/Debug/netstandard2.1/Infrastructure.dll)" />
+          <ExpandedNode Id="(Assembly=Infrastructure)" Label="Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="059e4dc8-c2cc-4988-bda4-7e058786b863" name="Infratructure.Test.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a27fec85-020e-4027-9765-58afc6fecf5e" direction="Forward">
+          <layerMoniker Id="eb38fcda-1ad1-427d-bad5-e4aac6b74285" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1cf23ff2-b91b-4b1e-8973-3de6781c3158" direction="Forward">
+          <layerMoniker Id="83b2168b-89b8-452f-8419-7978e446dd92" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="973124ed-1226-444c-97ef-bb7efb156929" name="Infratructure.Test.dll">
+          <ArtifactNode Label="Infratructure.Test.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Infratructure.Test/bin/Debug/netcoreapp3.1/Infratructure.Test.dll)" />
+          <ExpandedNode Id="(Assembly=Infratructure.Test)" Label="Infratructure.Test.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="b6ebd4bc-7b6c-4e79-9cb9-c4b621a97b1b" name="WebAPI.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="97e168d4-a04a-4338-8c4f-e188c45645a6" direction="Forward">
+          <layerMoniker Id="eb38fcda-1ad1-427d-bad5-e4aac6b74285" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1551bf88-686c-4821-b70c-7c0df9b8b307" direction="Forward">
+          <layerMoniker Id="83b2168b-89b8-452f-8419-7978e446dd92" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2108d5e9-229d-4312-bb1c-9fa533dec562" name="WebAPI.dll">
+          <ArtifactNode Label="WebAPI.dll" Category="CodeSchema_Assembly" Id="(Assembly=../WebAPI/bin/Debug/netcoreapp3.1/WebAPI.dll)" />
+          <ExpandedNode Id="(Assembly=WebAPI)" Label="WebAPI.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
